@@ -1,10 +1,15 @@
+"use client"
 import Image from "next/image";
 import React from 'react';
+// import ContactForm from "@/components/ContactForm";
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 
+import Contact from '../../components/contact/Contact'
 
-const Contact = () => {
+
+
+const contact = () => {
 
   const isNavbarVisible = false;
   const isFooterVisible = false;
@@ -29,38 +34,10 @@ const Contact = () => {
                       aider à concrétiser vos idées et à surpasser vos attentes
                     </p>
                   </div>
-
-                  <form>
-                    
-                    <div className="form-outline mb-4">
-                      <input type="text" id="form2Example11" class="form-control"
-                        placeholder="Nom et Prenom" required/>
-                    </div>
-
-                    <div className="form-outline mb-4">
-                      <input type="text" id="form2Example11" class="form-control"
-                        placeholder="Nom de l'entreprise" required/>
-                    </div>
-
-                    <div className="form-outline mb-4">
-                      <input type="tel" id="form2Example11" class="form-control"
-                        placeholder="Numéro de téléphone" required/>
-                    </div>
-
-                    <div className="form-outline mb-4">
-                      <input type="email" id="form2Example11" class="form-control"
-                        placeholder="Adresse email"required />
-                    </div>
-
-                    <div data-mdb-input-init class="form-outline mb-4  border-primary-subtle">
-                      <textarea class="form-control" id="form6Example7" rows="4" placeholder="Parlez-nous de vote demande"></textarea>
-                    </div>
-
-                    <button data-mdb-ripple-init type="button" class="btn btn-primary mb-4 rounded">Envoyer</button>
-
-                  </form>
-
-                </div>
+   
+                <Contact/>
+                 
+            </div>
               </div>
               <div className="col-lg-6 d-flex align-items-center gradient-custom-2 position-absolute" id="sectioncont1">
                 <div className="text-white px-3 py-4 p-md-5 mx-md-4">
@@ -85,6 +62,7 @@ const Contact = () => {
                         width={25}
                         height={25}
                         className="mx-2 text-light"
+                        alt="teste"
                      
                       />
                       <Image
@@ -92,19 +70,22 @@ const Contact = () => {
                         width={25}
                         height={25}
                         className="text-light"
+                        alt="teste"
                       />
                       <Image
                         src="/icon66.png"
                         width={25}
                         height={25}
                         className="mx-2 text-light"
+                        alt="teste"
                     
                       />
                       <Image
                         src="/icon77.png"
                         width={25}
                         height={25}    
-                        className="text-light"           
+                        className="text-light"    
+                        alt="teste"      
                       />
                     </div>
                   </div>
@@ -121,4 +102,4 @@ const Contact = () => {
     );
   };
   
-export default Contact;
+export default contact;
